@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrototypePattern", "Prototy
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlyweightPattern", "FlyweightPattern\FlyweightPattern.csproj", "{8B845241-DA6F-4E0D-A84E-A35446DE584F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompsitePattern", "CompsitePattern\CompsitePattern.csproj", "{2FEA8603-7D6B-44C0-8D4B-FFA085B6A6AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{8B845241-DA6F-4E0D-A84E-A35446DE584F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B845241-DA6F-4E0D-A84E-A35446DE584F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B845241-DA6F-4E0D-A84E-A35446DE584F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FEA8603-7D6B-44C0-8D4B-FFA085B6A6AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FEA8603-7D6B-44C0-8D4B-FFA085B6A6AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FEA8603-7D6B-44C0-8D4B-FFA085B6A6AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FEA8603-7D6B-44C0-8D4B-FFA085B6A6AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
