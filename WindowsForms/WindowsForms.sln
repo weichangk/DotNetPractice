@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IrisSkinApp", "IrisSkinApp\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsSyncApp", "FormsSyncApp\FormsSyncApp.csproj", "{36BC1C88-E1CF-4BE4-AC8D-98C838390567}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassValuesBetweenForms", "PassValuesBetweenForms\PassValuesBetweenForms.csproj", "{48FD5D05-CC7E-4662-9003-C8A4B0B477E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{36BC1C88-E1CF-4BE4-AC8D-98C838390567}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36BC1C88-E1CF-4BE4-AC8D-98C838390567}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36BC1C88-E1CF-4BE4-AC8D-98C838390567}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48FD5D05-CC7E-4662-9003-C8A4B0B477E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48FD5D05-CC7E-4662-9003-C8A4B0B477E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48FD5D05-CC7E-4662-9003-C8A4B0B477E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48FD5D05-CC7E-4662-9003-C8A4B0B477E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
