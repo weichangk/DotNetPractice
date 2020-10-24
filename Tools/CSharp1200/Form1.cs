@@ -26,8 +26,7 @@ namespace CSharp1200
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Console.WriteLine(StingGetNum("asadas0123sdas2323"));
-            //Console.WriteLine(StingGetNum("asdasf"));
+            ContentsDo();
         }
 
         private string StingGetNum(string input)
@@ -61,28 +60,31 @@ namespace CSharp1200
                     {
                         var num = StingGetNum(dir2.Name).ToString().PadLeft(4, '0') + "_";
                         DirectoryInfo[] dirList3 = dir2.GetDirectories();//三级子目录
-                        int i = 0;
+                        //int i = 0;
                         foreach (var dir3 in dirList3)
                         {
                             DirectoryInfo[] dirList4 = dir3.GetDirectories();//四级子目录
                             foreach (var dir4 in dirList4)
                             {
-                                if (dir4.Name == ".vs" || dir4.Name == "Backup") continue;
-                                //DirectoryInfo[] dirList5 = dir4.GetDirectories();//五级子目录
-                                foreach (var filelist in dir4.GetFiles())
+                                //if (dir4.Name == ".vs" || dir4.Name == "Backup") continue;
+                                if (dir4.Name == dir3.Name)
                                 {
-                                    if (filelist.Extension == ".csproj")
+                                    //DirectoryInfo[] dirList5 = dir4.GetDirectories();//五级子目录
+                                    foreach (var filelist in dir4.GetFiles())
                                     {
-                                        System.IO.File.Move(filelist.FullName, dir4.FullName + "\\" + num + filelist.Name);//重命名文件
+                                        if (filelist.Extension == ".csproj")
+                                        {
+                                            System.IO.File.Move(filelist.FullName, dir4.FullName + "\\" + num + filelist.Name);//重命名文件
+                                        }
+                                        if (filelist.Extension == ".user")
+                                        {
+                                            System.IO.File.Delete(filelist.FullName);//删除
+                                        }
                                     }
-                                    if (filelist.Extension == ".user")
-                                    {
-                                        System.IO.File.Delete(filelist.FullName);//删除
-                                    }
+                                    //Directory.Move(dir4.FullName, dirList3[i].FullName + "\\" + num + dir4.Name);//重命名文件夹
+                                    Directory.Move(dir4.FullName, DInfo.FullName + "\\" + num + dir4.Name);//移动文件
+                                    //i++;
                                 }
-                                //Directory.Move(dir4.FullName, dirList3[i].FullName + "\\" + num + dir4.Name);//重命名文件夹
-                                Directory.Move(dir4.FullName, DInfo.FullName + "\\" + num + dir4.Name);//移动文件
-                                i++;
                             }
                         }
                     }
@@ -92,7 +94,67 @@ namespace CSharp1200
             {
                 MessageBox.Show(ex.Message);
             }
+        }
 
+
+        /*
+            第Ⅰ卷
+                第1篇 编程基础篇
+		            第1章 开发环境的使用
+		            第2章 语言基础应用
+			            2.1 代码的注释
+				            实例013 对单行代码进行注释
+         */
+        /// <summary>
+        /// 获取目录文件
+        /// </summary>
+        private void ContentsDo()
+        {
+            try
+            {
+                var rootPath = textBox2.Text;
+                DirectoryInfo dirRoot = new DirectoryInfo(rootPath);//根目录
+                using (StreamWriter sw = new StreamWriter(dirRoot.FullName + "\\" + "contents.txt", false, Encoding.UTF8))
+                {
+                    sw.WriteLine(dirRoot.Name);//第Ⅰ卷
+                    var dirlist1 = dirRoot.GetDirectories();//一级目录
+                    dirlist1.ToList().ForEach(dir1 =>
+                    {
+                        if (dir1.Name.Contains("第"))
+                        {
+                            sw.WriteLine("  " + dir1.Name);//第1篇 编程基础篇
+                            var dirlist2 = dir1.GetDirectories();//二级目录
+                            dirlist2.ToList().ForEach(dir2 =>
+                            {
+                                if (dir2.Name.Contains("第"))
+                                {
+                                    sw.WriteLine("      " + dir2.Name);//第2章 语言基础应用
+                                    var dirlist3 = dir2.GetDirectories();//三级目录
+                                    dirlist3.ToList().ForEach(dir3 =>
+                                    {
+                                        sw.WriteLine("          " + dir3.Name);//2.1 代码的注释
+                                        var dirlist4 = dir3.GetDirectories();//四级目录
+                                        dirlist4.ToList().ForEach(dir4 =>
+                                        {
+                                            string dir4Name = dir4.Name.Replace(StingGetNum(dir4.Name), StingGetNum(dir4.Name).PadLeft(4, '0'));
+                                            if (dir4Name.Substring(0, 2) != "实例")
+                                            {
+                                                dir4Name = "实例" + dir4Name;
+                                            }
+                                            sw.WriteLine("              " + dir4Name);//实例013 对单行代码进行注释
+                                        });
+                                    });
+                                }
+                            });
+                        }
+
+                    });
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
     }

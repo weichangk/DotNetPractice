@@ -3,182 +3,231 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0013_SingleCommentate", "chapter02\0013_SingleCommentate\0013_SingleCommentate.csproj", "{4F345135-45D2-4622-ACCF-2BC35A9C0009}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0013_SingleCommentate", "Book1\chapter02\0013_SingleCommentate\0013_SingleCommentate.csproj", "{4F345135-45D2-4622-ACCF-2BC35A9C0009}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0014_ManyCommentate", "chapter02\0014_ManyCommentate\0014_ManyCommentate.csproj", "{F87075E6-796D-4EE1-93F5-ADC15D5BC647}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0014_ManyCommentate", "Book1\chapter02\0014_ManyCommentate\0014_ManyCommentate.csproj", "{F87075E6-796D-4EE1-93F5-ADC15D5BC647}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0015_CodeCommentate", "chapter02\0015_CodeCommentate\0015_CodeCommentate.csproj", "{9EFF0D6B-A2BD-4399-9544-58C288D33D88}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0015_CodeCommentate", "Book1\chapter02\0015_CodeCommentate\0015_CodeCommentate.csproj", "{9EFF0D6B-A2BD-4399-9544-58C288D33D88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0016_GetString", "chapter02\0016_GetString\0016_GetString.csproj", "{A3931D73-2DF6-479A-9FAC-E5F2D57DFB93}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0016_GetString", "Book1\chapter02\0016_GetString\0016_GetString.csproj", "{A3931D73-2DF6-479A-9FAC-E5F2D57DFB93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0017_Calculator", "chapter02\0017_Calculator\0017_Calculator.csproj", "{1435983A-297D-4A9B-973C-495691F903B6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0017_Calculator", "Book1\chapter02\0017_Calculator\0017_Calculator.csproj", "{1435983A-297D-4A9B-973C-495691F903B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0018_Encrypt", "chapter02\0018_Encrypt\0018_Encrypt.csproj", "{4F4D47D1-66E5-40D6-92B4-3BD5F12268BF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0018_Encrypt", "Book1\chapter02\0018_Encrypt\0018_Encrypt.csproj", "{4F4D47D1-66E5-40D6-92B4-3BD5F12268BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0019_GetCode", "chapter02\0019_GetCode\0019_GetCode.csproj", "{A9B8EDEC-702D-4ADD-A3E6-8A8169AB091E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0019_GetCode", "Book1\chapter02\0019_GetCode\0019_GetCode.csproj", "{A9B8EDEC-702D-4ADD-A3E6-8A8169AB091E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0020_GetYear", "chapter02\0020_GetYear\0020_GetYear.csproj", "{D9B5D592-D609-4B5A-8805-BB291F561C5A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0020_GetYear", "Book1\chapter02\0020_GetYear\0020_GetYear.csproj", "{D9B5D592-D609-4B5A-8805-BB291F561C5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0021_IfThenElse", "chapter02\0021_IfThenElse\0021_IfThenElse.csproj", "{B911AA3A-8802-4129-9A12-4207EFB68B95}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0021_IfThenElse", "Book1\chapter02\0021_IfThenElse\0021_IfThenElse.csproj", "{B911AA3A-8802-4129-9A12-4207EFB68B95}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "chapter02", "chapter02", "{3D5E1A23-024C-4565-9BC1-F24E585A127B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D4385DE1-258E-43F1-91DD-919BEE018473}"
 	ProjectSection(SolutionItems) = preProject
-		contents.txt = contents.txt
+		Book1Contents.txt = Book1Contents.txt
+		Book2Contents.txt = Book2Contents.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "chapter03", "chapter03", "{8C806A2B-7D36-42FE-8495-EA810C19241F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0035_ToUpperOrLower", "chapter03\0035_ToUpperOrLower\0035_ToUpperOrLower.csproj", "{67B349A2-3C7C-4FAA-B6BD-46E99540EAF5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0035_ToUpperOrLower", "Book1\chapter03\0035_ToUpperOrLower\0035_ToUpperOrLower.csproj", "{67B349A2-3C7C-4FAA-B6BD-46E99540EAF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0036_ASCII", "chapter03\0036_ASCII\0036_ASCII.csproj", "{C896D9C2-88F9-4C7F-B4CA-5E0E980F6EF0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0036_ASCII", "Book1\chapter03\0036_ASCII\0036_ASCII.csproj", "{C896D9C2-88F9-4C7F-B4CA-5E0E980F6EF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0037_ChineseCode", "chapter03\0037_ChineseCode\0037_ChineseCode.csproj", "{683C5FE1-B33E-4E55-AE21-6FB6156FA41D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0037_ChineseCode", "Book1\chapter03\0037_ChineseCode\0037_ChineseCode.csproj", "{683C5FE1-B33E-4E55-AE21-6FB6156FA41D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0038_ChineseToABC", "chapter03\0038_ChineseToABC\0038_ChineseToABC.csproj", "{2343DD4C-A1EA-4B05-BCCB-24C84A35A875}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0038_ChineseToABC", "Book1\chapter03\0038_ChineseToABC\0038_ChineseToABC.csproj", "{2343DD4C-A1EA-4B05-BCCB-24C84A35A875}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0039_Lines", "chapter03\0039_Lines\0039_Lines.csproj", "{6044F0AB-1716-4241-AE0A-227591831102}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0039_Lines", "Book1\chapter03\0039_Lines\0039_Lines.csproj", "{6044F0AB-1716-4241-AE0A-227591831102}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0040_UserName", "chapter03\0040_UserName\0040_UserName.csproj", "{D5BC4163-1B02-464A-AA46-EF02EA288B17}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0040_UserName", "Book1\chapter03\0040_UserName\0040_UserName.csproj", "{D5BC4163-1B02-464A-AA46-EF02EA288B17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0041_ReverseStr", "chapter03\0041_ReverseStr\0041_ReverseStr.csproj", "{C9417B0D-F5E9-4393-875F-2FBDB4BC2C31}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0041_ReverseStr", "Book1\chapter03\0041_ReverseStr\0041_ReverseStr.csproj", "{C9417B0D-F5E9-4393-875F-2FBDB4BC2C31}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0042_RemoveBlank", "chapter03\0042_RemoveBlank\0042_RemoveBlank.csproj", "{FD945D07-ED7C-4D01-9126-6ED0476E2B7B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0042_RemoveBlank", "Book1\chapter03\0042_RemoveBlank\0042_RemoveBlank.csproj", "{FD945D07-ED7C-4D01-9126-6ED0476E2B7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0043_FilePathString", "chapter03\0043_FilePathString\0043_FilePathString.csproj", "{35765E64-F9CF-4AAD-8C10-D94AE1BDD0E6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0043_FilePathString", "Book1\chapter03\0043_FilePathString\0043_FilePathString.csproj", "{35765E64-F9CF-4AAD-8C10-D94AE1BDD0E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0044_GetCount", "chapter03\0044_GetCount\0044_GetCount.csproj", "{A48B7519-8863-439C-B9F2-28F009329DBE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0044_GetCount", "Book1\chapter03\0044_GetCount\0044_GetCount.csproj", "{A48B7519-8863-439C-B9F2-28F009329DBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0045_ReplaceString", "chapter03\0045_ReplaceString\0045_ReplaceString.csproj", "{AA9A13CC-3400-42F7-9389-0E2A7EDBD303}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0045_ReplaceString", "Book1\chapter03\0045_ReplaceString\0045_ReplaceString.csproj", "{AA9A13CC-3400-42F7-9389-0E2A7EDBD303}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0046_StringEncrypt", "chapter03\0046_StringEncrypt\0046_StringEncrypt.csproj", "{02E9B0D7-6A03-44EF-86D5-53AD17D33728}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0046_StringEncrypt", "Book1\chapter03\0046_StringEncrypt\0046_StringEncrypt.csproj", "{02E9B0D7-6A03-44EF-86D5-53AD17D33728}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0047_TryNum", "chapter03\0047_TryNum\0047_TryNum.csproj", "{C2D1D567-BB78-4E42-87F0-F66AFE5D5277}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0047_TryNum", "Book1\chapter03\0047_TryNum\0047_TryNum.csproj", "{C2D1D567-BB78-4E42-87F0-F66AFE5D5277}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0048_Round", "chapter03\0048_Round\0048_Round.csproj", "{416F3300-1D7C-4C6C-8799-088BA57BD9DE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0048_Round", "Book1\chapter03\0048_Round\0048_Round.csproj", "{416F3300-1D7C-4C6C-8799-088BA57BD9DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0049_Transform", "chapter03\0049_Transform\0049_Transform.csproj", "{D9CFB24A-9698-4164-BD3B-5527525464CF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0049_Transform", "Book1\chapter03\0049_Transform\0049_Transform.csproj", "{D9CFB24A-9698-4164-BD3B-5527525464CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0050_SetValue", "chapter03\0050_SetValue\0050_SetValue.csproj", "{9C429582-3D0E-46E3-B5D3-F6CD3DC4D768}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0050_SetValue", "Book1\chapter03\0050_SetValue\0050_SetValue.csproj", "{9C429582-3D0E-46E3-B5D3-F6CD3DC4D768}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0051_Format", "chapter03\0051_Format\0051_Format.csproj", "{B05612D9-E853-4FAD-8590-FBC69FEA9DC5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0051_Format", "Book1\chapter03\0051_Format\0051_Format.csproj", "{B05612D9-E853-4FAD-8590-FBC69FEA9DC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0052_Conversion", "chapter03\0052_Conversion\0052_Conversion.csproj", "{E913A889-BDCF-4A4C-BE48-ED7BC7B9AFAE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0052_Conversion", "Book1\chapter03\0052_Conversion\0052_Conversion.csproj", "{E913A889-BDCF-4A4C-BE48-ED7BC7B9AFAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0053_GetTime", "chapter03\0053_GetTime\0053_GetTime.csproj", "{853BC93A-1CE5-42AC-90A2-4AF74ADB8274}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0053_GetTime", "Book1\chapter03\0053_GetTime\0053_GetTime.csproj", "{853BC93A-1CE5-42AC-90A2-4AF74ADB8274}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0054_SetDate", "chapter03\0054_SetDate\0054_SetDate.csproj", "{E11BC254-502C-49E0-8DD7-9EF66290110F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0054_SetDate", "Book1\chapter03\0054_SetDate\0054_SetDate.csproj", "{E11BC254-502C-49E0-8DD7-9EF66290110F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0055_GetAge", "chapter03\0055_GetAge\0055_GetAge.csproj", "{BE68A62F-1269-4EFA-846A-B18B29FCEB1C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0055_GetAge", "Book1\chapter03\0055_GetAge\0055_GetAge.csproj", "{BE68A62F-1269-4EFA-846A-B18B29FCEB1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0056_GetShengXiao", "chapter03\0056_GetShengXiao\0056_GetShengXiao.csproj", "{24BF89A2-7202-4FC5-A3D1-CA16FA9BB3E2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0056_GetShengXiao", "Book1\chapter03\0056_GetShengXiao\0056_GetShengXiao.csproj", "{24BF89A2-7202-4FC5-A3D1-CA16FA9BB3E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0057_GetWeek", "chapter03\0057_GetWeek\0057_GetWeek.csproj", "{560EADB5-EECD-4B44-8BC0-543C7484FF24}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0057_GetWeek", "Book1\chapter03\0057_GetWeek\0057_GetWeek.csproj", "{560EADB5-EECD-4B44-8BC0-543C7484FF24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0058_GetDays", "chapter03\0058_GetDays\0058_GetDays.csproj", "{DB175A23-7FBA-444E-9400-1F9B721A279C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0058_GetDays", "Book1\chapter03\0058_GetDays\0058_GetDays.csproj", "{DB175A23-7FBA-444E-9400-1F9B721A279C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0059_DaysInMonth", "chapter03\0059_DaysInMonth\0059_DaysInMonth.csproj", "{9B5C6086-FDE3-4852-BCAA-19DE848FB373}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0059_DaysInMonth", "Book1\chapter03\0059_DaysInMonth\0059_DaysInMonth.csproj", "{9B5C6086-FDE3-4852-BCAA-19DE848FB373}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0060_GetYesterDay", "chapter03\0060_GetYesterDay\0060_GetYesterDay.csproj", "{9A48D0E5-099E-4EB4-B212-7919F6B16FE6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0060_GetYesterDay", "Book1\chapter03\0060_GetYesterDay\0060_GetYesterDay.csproj", "{9A48D0E5-099E-4EB4-B212-7919F6B16FE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0061_TmrFormat", "chapter03\0061_TmrFormat\0061_TmrFormat.csproj", "{ABAEAB23-D3AA-45B5-BB26-29A0C4380395}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0061_TmrFormat", "Book1\chapter03\0061_TmrFormat\0061_TmrFormat.csproj", "{ABAEAB23-D3AA-45B5-BB26-29A0C4380395}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0062_GetDateDiff", "chapter03\0062_GetDateDiff\0062_GetDateDiff.csproj", "{D5E83ED2-E861-4E01-80EC-8C8B6F058DB9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0062_GetDateDiff", "Book1\chapter03\0062_GetDateDiff\0062_GetDateDiff.csproj", "{D5E83ED2-E861-4E01-80EC-8C8B6F058DB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0063_AddDate", "chapter03\0063_AddDate\0063_AddDate.csproj", "{5332BF58-EEF0-4520-A476-2D6904FBB84F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0063_AddDate", "Book1\chapter03\0063_AddDate\0063_AddDate.csproj", "{5332BF58-EEF0-4520-A476-2D6904FBB84F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0064_GetInterval", "chapter03\0064_GetInterval\0064_GetInterval.csproj", "{668B2335-FBB0-4E31-A87E-C223DC572446}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0064_GetInterval", "Book1\chapter03\0064_GetInterval\0064_GetInterval.csproj", "{668B2335-FBB0-4E31-A87E-C223DC572446}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0065_UseSleep", "chapter03\0065_UseSleep\0065_UseSleep.csproj", "{0314DE45-133B-4821-A1C1-58EDA3AB95E5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0065_UseSleep", "Book1\chapter03\0065_UseSleep\0065_UseSleep.csproj", "{0314DE45-133B-4821-A1C1-58EDA3AB95E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0066_DisplayRunTime", "chapter03\0066_DisplayRunTime\0066_DisplayRunTime.csproj", "{4B57AA72-107F-4B6D-BA86-0CCD1B569CE1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0066_DisplayRunTime", "Book1\chapter03\0066_DisplayRunTime\0066_DisplayRunTime.csproj", "{4B57AA72-107F-4B6D-BA86-0CCD1B569CE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0067_ConvertToString", "chapter03\0067_ConvertToString\0067_ConvertToString.csproj", "{1D2E449D-D1C1-45D9-83C2-EA95D21330C1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0067_ConvertToString", "Book1\chapter03\0067_ConvertToString\0067_ConvertToString.csproj", "{1D2E449D-D1C1-45D9-83C2-EA95D21330C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0068_ToStringFormat", "chapter03\0068_ToStringFormat\0068_ToStringFormat.csproj", "{975696A2-39DD-469B-8ECD-180040BBFCDC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0068_ToStringFormat", "Book1\chapter03\0068_ToStringFormat\0068_ToStringFormat.csproj", "{975696A2-39DD-469B-8ECD-180040BBFCDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0069_ConvertToString", "chapter03\0069_ConvertToString\0069_ConvertToString.csproj", "{D1235E49-AB2B-4B8B-AD14-A72B3E38E5ED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0069_ConvertToString", "Book1\chapter03\0069_ConvertToString\0069_ConvertToString.csproj", "{D1235E49-AB2B-4B8B-AD14-A72B3E38E5ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0070_ValidatePhone", "chapter03\0070_ValidatePhone\0070_ValidatePhone.csproj", "{8B91885F-E322-4203-8B08-815FFE14BB6F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0070_ValidatePhone", "Book1\chapter03\0070_ValidatePhone\0070_ValidatePhone.csproj", "{8B91885F-E322-4203-8B08-815FFE14BB6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0071_ValidatePassWord", "chapter03\0071_ValidatePassWord\0071_ValidatePassWord.csproj", "{7BE9960B-DEF8-4DEA-B2B7-358ED45A4B9F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0071_ValidatePassWord", "Book1\chapter03\0071_ValidatePassWord\0071_ValidatePassWord.csproj", "{7BE9960B-DEF8-4DEA-B2B7-358ED45A4B9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0072_ValidateCode", "chapter03\0072_ValidateCode\0072_ValidateCode.csproj", "{5839B01C-2755-4DDB-AE0A-22ADBA0C1037}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0072_ValidateCode", "Book1\chapter03\0072_ValidateCode\0072_ValidateCode.csproj", "{5839B01C-2755-4DDB-AE0A-22ADBA0C1037}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0073_MobileValidate", "chapter03\0073_MobileValidate\0073_MobileValidate.csproj", "{5F7A4DC7-5744-459F-85A2-6E6993F3614E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0073_MobileValidate", "Book1\chapter03\0073_MobileValidate\0073_MobileValidate.csproj", "{5F7A4DC7-5744-459F-85A2-6E6993F3614E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0074_ValidatePerson", "chapter03\0074_ValidatePerson\0074_ValidatePerson.csproj", "{64ECA72E-BD28-4DB1-BC4E-32DC2EBCB887}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0074_ValidatePerson", "Book1\chapter03\0074_ValidatePerson\0074_ValidatePerson.csproj", "{64ECA72E-BD28-4DB1-BC4E-32DC2EBCB887}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0075_ValidateDecimal", "chapter03\0075_ValidateDecimal\0075_ValidateDecimal.csproj", "{F6625E77-CBFB-485B-B3B6-D46ADC14C022}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0075_ValidateDecimal", "Book1\chapter03\0075_ValidateDecimal\0075_ValidateDecimal.csproj", "{F6625E77-CBFB-485B-B3B6-D46ADC14C022}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0076_ValidateMonth", "chapter03\0076_ValidateMonth\0076_ValidateMonth.csproj", "{33EED5AB-4E6F-47DA-B273-BC93A92B7DFB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0076_ValidateMonth", "Book1\chapter03\0076_ValidateMonth\0076_ValidateMonth.csproj", "{33EED5AB-4E6F-47DA-B273-BC93A92B7DFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0077_ValidateDay", "chapter03\0077_ValidateDay\0077_ValidateDay.csproj", "{DB546555-BDD5-46F4-9766-25BEE5B62633}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0077_ValidateDay", "Book1\chapter03\0077_ValidateDay\0077_ValidateDay.csproj", "{DB546555-BDD5-46F4-9766-25BEE5B62633}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0078_ValidateValue", "chapter03\0078_ValidateValue\0078_ValidateValue.csproj", "{CEFA8046-F3F5-4AF6-B9AA-661866C1722E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0078_ValidateValue", "Book1\chapter03\0078_ValidateValue\0078_ValidateValue.csproj", "{CEFA8046-F3F5-4AF6-B9AA-661866C1722E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0079_ValidateLength", "chapter03\0079_ValidateLength\0079_ValidateLength.csproj", "{80719FAF-1AE2-4099-9132-95D0AB0CEE2C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0079_ValidateLength", "Book1\chapter03\0079_ValidateLength\0079_ValidateLength.csproj", "{80719FAF-1AE2-4099-9132-95D0AB0CEE2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0080_ValidateInteger", "chapter03\0080_ValidateInteger\0080_ValidateInteger.csproj", "{5054856E-B5DE-4FBE-B861-9E7D2CA4826B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0080_ValidateInteger", "Book1\chapter03\0080_ValidateInteger\0080_ValidateInteger.csproj", "{5054856E-B5DE-4FBE-B861-9E7D2CA4826B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0081_ValidateInteger", "chapter03\0081_ValidateInteger\0081_ValidateInteger.csproj", "{AFE230AD-7FA7-484B-BB53-724515B8D14A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0081_ValidateInteger", "Book1\chapter03\0081_ValidateInteger\0081_ValidateInteger.csproj", "{AFE230AD-7FA7-484B-BB53-724515B8D14A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0082_ValidateCapitalLetter", "chapter03\0082_ValidateCapitalLetter\0082_ValidateCapitalLetter.csproj", "{C9021681-1BE5-43A2-A407-DC7631120C51}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0082_ValidateCapitalLetter", "Book1\chapter03\0082_ValidateCapitalLetter\0082_ValidateCapitalLetter.csproj", "{C9021681-1BE5-43A2-A407-DC7631120C51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0083_ValidateSmallLetter", "chapter03\0083_ValidateSmallLetter\0083_ValidateSmallLetter.csproj", "{93A86182-9E2B-4C51-B576-6AAC3C2C2241}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0083_ValidateSmallLetter", "Book1\chapter03\0083_ValidateSmallLetter\0083_ValidateSmallLetter.csproj", "{93A86182-9E2B-4C51-B576-6AAC3C2C2241}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0084_ValidateWord", "chapter03\0084_ValidateWord\0084_ValidateWord.csproj", "{103E789D-F2B0-4AF2-AFB1-E0294DC8A2E1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0084_ValidateWord", "Book1\chapter03\0084_ValidateWord\0084_ValidateWord.csproj", "{103E789D-F2B0-4AF2-AFB1-E0294DC8A2E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0085_ReplaceStr", "chapter03\0085_ReplaceStr\0085_ReplaceStr.csproj", "{213429B4-8795-45E9-BAF9-E6159E81B9CD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0085_ReplaceStr", "Book1\chapter03\0085_ReplaceStr\0085_ReplaceStr.csproj", "{213429B4-8795-45E9-BAF9-E6159E81B9CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0086_ValidateSplit", "chapter03\0086_ValidateSplit\0086_ValidateSplit.csproj", "{1A9B3D42-6DC8-4E45-873F-EEDE3B7015C3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0086_ValidateSplit", "Book1\chapter03\0086_ValidateSplit\0086_ValidateSplit.csproj", "{1A9B3D42-6DC8-4E45-873F-EEDE3B7015C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0087_IsLetter", "chapter03\0087_IsLetter\0087_IsLetter.csproj", "{D81CB7DA-5FCF-4C89-8378-313ACFD24F3E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0087_IsLetter", "Book1\chapter03\0087_IsLetter\0087_IsLetter.csproj", "{D81CB7DA-5FCF-4C89-8378-313ACFD24F3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0088_IsChinese", "chapter03\0088_IsChinese\0088_IsChinese.csproj", "{20564F80-2BA9-4385-8337-9BD818147149}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0088_IsChinese", "Book1\chapter03\0088_IsChinese\0088_IsChinese.csproj", "{20564F80-2BA9-4385-8337-9BD818147149}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0089_LetterCount", "chapter03\0089_LetterCount\0089_LetterCount.csproj", "{F297535F-8585-4F5E-9C5A-051113BB21EE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0089_LetterCount", "Book1\chapter03\0089_LetterCount\0089_LetterCount.csproj", "{F297535F-8585-4F5E-9C5A-051113BB21EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0090_ValidateEmail", "chapter03\0090_ValidateEmail\0090_ValidateEmail.csproj", "{BF518153-2940-4FBC-8ABE-4783BAF4F108}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0090_ValidateEmail", "Book1\chapter03\0090_ValidateEmail\0090_ValidateEmail.csproj", "{BF518153-2940-4FBC-8ABE-4783BAF4F108}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0091_ValidateIP", "chapter03\0091_ValidateIP\0091_ValidateIP.csproj", "{A49D7687-343D-4D6F-BDE9-88104104E68C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0091_ValidateIP", "Book1\chapter03\0091_ValidateIP\0091_ValidateIP.csproj", "{A49D7687-343D-4D6F-BDE9-88104104E68C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0092_ValidateURL", "chapter03\0092_ValidateURL\0092_ValidateURL.csproj", "{173E256F-5734-432D-87F3-08196D3E092D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0092_ValidateURL", "Book1\chapter03\0092_ValidateURL\0092_ValidateURL.csproj", "{173E256F-5734-432D-87F3-08196D3E092D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "chapter04", "chapter04", "{14688555-402B-4B35-B5E3-744776AE1B8A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0093_ArrayRank", "chapter04\0093_ArrayRank\0093_ArrayRank.csproj", "{6F51C3C3-52E9-4138-8D0E-1D69BC4EE775}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0093_ArrayRank", "Book1\chapter04\0093_ArrayRank\0093_ArrayRank.csproj", "{6F51C3C3-52E9-4138-8D0E-1D69BC4EE775}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0094_FindStr", "chapter04\0094_FindStr\0094_FindStr.csproj", "{F373CAD9-F3D2-42B5-9A17-C40069334AAA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0094_FindStr", "Book1\chapter04\0094_FindStr\0094_FindStr.csproj", "{F373CAD9-F3D2-42B5-9A17-C40069334AAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0095_AddElementInArray", "chapter04\0095_AddElementInArray\0095_AddElementInArray.csproj", "{674C0E5A-BBB4-4CD0-9429-AF41E1A6DC01}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0095_AddElementInArray", "Book1\chapter04\0095_AddElementInArray\0095_AddElementInArray.csproj", "{674C0E5A-BBB4-4CD0-9429-AF41E1A6DC01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0096_AddArrayInArray", "chapter04\0096_AddArrayInArray\0096_AddArrayInArray.csproj", "{4CB71FB0-C794-492A-9013-D12C4523066B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0096_AddArrayInArray", "Book1\chapter04\0096_AddArrayInArray\0096_AddArrayInArray.csproj", "{4CB71FB0-C794-492A-9013-D12C4523066B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0097_DelArrayNoLength", "chapter04\0097_DelArrayNoLength\0097_DelArrayNoLength.csproj", "{7F6EC2D8-E804-4640-B04A-20BB2EBB5958}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0097_DelArrayNoLength", "Book1\chapter04\0097_DelArrayNoLength\0097_DelArrayNoLength.csproj", "{7F6EC2D8-E804-4640-B04A-20BB2EBB5958}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0098_DelArrayYesLength", "chapter04\0098_DelArrayYesLength\0098_DelArrayYesLength.csproj", "{14ECCF38-64F4-4DB9-9081-AA0B4D08BF68}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0098_DelArrayYesLength", "Book1\chapter04\0098_DelArrayYesLength\0098_DelArrayYesLength.csproj", "{14ECCF38-64F4-4DB9-9081-AA0B4D08BF68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0099_SelectSort", "chapter04\0099_SelectSort\0099_SelectSort.csproj", "{5DD7EFED-311E-4B95-8C39-342A337FA798}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0099_SelectSort", "Book1\chapter04\0099_SelectSort\0099_SelectSort.csproj", "{5DD7EFED-311E-4B95-8C39-342A337FA798}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0100_BubbleUpSort", "chapter04\0100_BubbleUpSort\0100_BubbleUpSort.csproj", "{1B4CEE4A-E0F6-4EC3-A4F2-16C6590926DC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0100_BubbleUpSort", "Book1\chapter04\0100_BubbleUpSort\0100_BubbleUpSort.csproj", "{1B4CEE4A-E0F6-4EC3-A4F2-16C6590926DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0101_FastSort", "chapter04\0101_FastSort\0101_FastSort.csproj", "{0B0C2C4D-B3B7-48FB-9AB6-2E7372A5A463}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0101_FastSort", "Book1\chapter04\0101_FastSort\0101_FastSort.csproj", "{0B0C2C4D-B3B7-48FB-9AB6-2E7372A5A463}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0102_InsertSort", "chapter04\0102_InsertSort\0102_InsertSort.csproj", "{64F00E47-8F32-4C99-BAB8-1AB8BA9D5189}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0102_InsertSort", "Book1\chapter04\0102_InsertSort\0102_InsertSort.csproj", "{64F00E47-8F32-4C99-BAB8-1AB8BA9D5189}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0103_XESort", "chapter04\0103_XESort\0103_XESort.csproj", "{190FE141-EDAC-436C-9BF6-746D260B46DC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0103_XESort", "Book1\chapter04\0103_XESort\0103_XESort.csproj", "{190FE141-EDAC-436C-9BF6-746D260B46DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0104_SortArray", "chapter04\0104_SortArray\0104_SortArray.csproj", "{EB95A2D4-F2ED-4114-9FDB-99EF6B115DFD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0104_SortArray", "Book1\chapter04\0104_SortArray\0104_SortArray.csproj", "{EB95A2D4-F2ED-4114-9FDB-99EF6B115DFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0105_Reverse", "chapter04\0105_Reverse\0105_Reverse.csproj", "{165D8264-DCB6-41DB-AB10-114AA204CFEC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0105_Reverse", "Book1\chapter04\0105_Reverse\0105_Reverse.csproj", "{165D8264-DCB6-41DB-AB10-114AA204CFEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0106_AddStudentINList", "chapter04\0106_AddStudentINList\0106_AddStudentINList.csproj", "{2D213DB9-0447-44CB-B2A3-E9EF3B0FE247}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0106_AddStudentINList", "Book1\chapter04\0106_AddStudentINList\0106_AddStudentINList.csproj", "{2D213DB9-0447-44CB-B2A3-E9EF3B0FE247}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0107_SelectXMLByHasTable", "chapter04\0107_SelectXMLByHasTable\0107_SelectXMLByHasTable.csproj", "{059498C5-08FB-4B29-A1E8-2987408970E2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0107_SelectXMLByHasTable", "Book1\chapter04\0107_SelectXMLByHasTable\0107_SelectXMLByHasTable.csproj", "{059498C5-08FB-4B29-A1E8-2987408970E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0108_CalcRMatrix", "chapter04\0108_CalcRMatrix\0108_CalcRMatrix.csproj", "{35473D7E-BBE1-4345-9AEA-0821A08B72D6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0108_CalcRMatrix", "Book1\chapter04\0108_CalcRMatrix\0108_CalcRMatrix.csproj", "{35473D7E-BBE1-4345-9AEA-0821A08B72D6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "chapter05", "chapter05", "{6E79D378-6727-4A9A-B9A3-25E7E4E01236}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0109_StoreIDAndName", "Book1\chapter05\0109_StoreIDAndName\0109_StoreIDAndName.csproj", "{1EF3155F-034C-40AD-B3FE-27D1F485BF6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0110_SquareByMethod", "Book1\chapter05\0110_SquareByMethod\0110_SquareByMethod.csproj", "{3FD0D8A0-2934-4EF3-917D-CEFF7C85340C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0111_TypesCalc", "Book1\chapter05\0111_TypesCalc\0111_TypesCalc.csproj", "{D34A199C-15C6-4267-AAC4-CAD3008E6833}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0112_GetRAreaByStruct", "Book1\chapter05\0112_GetRAreaByStruct\0112_GetRAreaByStruct.csproj", "{C14505BD-14C9-4AA4-871C-EDE53B0FC2B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0113_GetTAreaByClass", "Book1\chapter05\0113_GetTAreaByClass\0113_GetTAreaByClass.csproj", "{1777F0FB-E79A-4DD8-85D2-611D64F85EAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0114_CalcByClass", "Book1\chapter05\0114_CalcByClass\0114_CalcByClass.csproj", "{70128571-BDB0-40A1-8FA5-08E70E0B4BF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0115_GetNumInString", "Book1\chapter05\0115_GetNumInString\0115_GetNumInString.csproj", "{403436F3-65A6-4DCF-BFEE-DA86A205FB08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0116_CalcRAreaByAbstractClass", "Book1\chapter05\0116_CalcRAreaByAbstractClass\0116_CalcRAreaByAbstractClass.csproj", "{E34E01FA-DB80-4070-B7FC-EF82B77F5068}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0117_AppInterface", "Book1\chapter05\0117_AppInterface\0117_AppInterface.csproj", "{7C076769-C2DD-4E88-80F1-8D9714249CBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0118_SealedUserInfo", "Book1\chapter05\0118_SealedUserInfo\0118_SealedUserInfo.csproj", "{6E0583D9-76E3-4E71-BE46-A00EC3F8D729}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0119_AddByVirtualMethod", "Book1\chapter05\0119_AddByVirtualMethod\0119_AddByVirtualMethod.csproj", "{C91C6FF1-9CBD-4A00-BB79-1F237EDC1263}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0120_PeopleSpeakByMState", "Book1\chapter05\0120_PeopleSpeakByMState\0120_PeopleSpeakByMState.csproj", "{B6391606-3147-414D-BC59-002342D2DCEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0121_ShowBusStation", "Book1\chapter05\0121_ShowBusStation\0121_ShowBusStation.csproj", "{4E88FE26-4866-47C5-92CA-D2840C970826}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0122_ReverseOrder", "Book1\chapter05\0122_ReverseOrder\0122_ReverseOrder.csproj", "{8E20E4C7-FE27-484B-85EB-433880D4330C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0123_DynamicLetter", "Book1\chapter05\0123_DynamicLetter\0123_DynamicLetter.csproj", "{E66E54E4-AFEF-4048-B364-1F376CEB9689}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0124_BranchMeans", "Book1\chapter05\0124_BranchMeans\0124_BranchMeans.csproj", "{B523EBCD-9CAB-4D37-BF4F-63D1C8CCBC3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0125_StoreStuInfo", "Book1\chapter05\0125_StoreStuInfo\0125_StoreStuInfo.csproj", "{6484DA0F-9253-407A-858F-51E2613B5346}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0126_ExtensiveList", "Book1\chapter05\0126_ExtensiveList\0126_ExtensiveList.csproj", "{3E486266-2FEC-4ED3-BA58-A87085F118F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0127_ArrayInfo", "Book1\chapter05\0127_ArrayInfo\0127_ArrayInfo.csproj", "{F0DA0274-42B6-455D-BAA5-196B6BF04569}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0128_ShowStuInfo", "Book1\chapter05\0128_ShowStuInfo\0128_ShowStuInfo.csproj", "{14EAC91F-5F57-47CD-9B8D-182979CC2479}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0129_FormDisOperate", "Book1\chapter05\0129_FormDisOperate\0129_FormDisOperate.csproj", "{22A247E1-918B-4912-B226-F8F49C776DCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0130_RemoveSameNum", "Book1\chapter05\0130_RemoveSameNum\0130_RemoveSameNum.csproj", "{816BF417-4312-462C-BD55-4538A848A933}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Book1", "Book1", "{9684DE79-9A4B-400A-8B8D-B5962F0A26C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -518,6 +567,94 @@ Global
 		{35473D7E-BBE1-4345-9AEA-0821A08B72D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35473D7E-BBE1-4345-9AEA-0821A08B72D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35473D7E-BBE1-4345-9AEA-0821A08B72D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EF3155F-034C-40AD-B3FE-27D1F485BF6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EF3155F-034C-40AD-B3FE-27D1F485BF6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EF3155F-034C-40AD-B3FE-27D1F485BF6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EF3155F-034C-40AD-B3FE-27D1F485BF6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FD0D8A0-2934-4EF3-917D-CEFF7C85340C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FD0D8A0-2934-4EF3-917D-CEFF7C85340C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FD0D8A0-2934-4EF3-917D-CEFF7C85340C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FD0D8A0-2934-4EF3-917D-CEFF7C85340C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D34A199C-15C6-4267-AAC4-CAD3008E6833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D34A199C-15C6-4267-AAC4-CAD3008E6833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D34A199C-15C6-4267-AAC4-CAD3008E6833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D34A199C-15C6-4267-AAC4-CAD3008E6833}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C14505BD-14C9-4AA4-871C-EDE53B0FC2B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C14505BD-14C9-4AA4-871C-EDE53B0FC2B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C14505BD-14C9-4AA4-871C-EDE53B0FC2B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C14505BD-14C9-4AA4-871C-EDE53B0FC2B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1777F0FB-E79A-4DD8-85D2-611D64F85EAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1777F0FB-E79A-4DD8-85D2-611D64F85EAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1777F0FB-E79A-4DD8-85D2-611D64F85EAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1777F0FB-E79A-4DD8-85D2-611D64F85EAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70128571-BDB0-40A1-8FA5-08E70E0B4BF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70128571-BDB0-40A1-8FA5-08E70E0B4BF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70128571-BDB0-40A1-8FA5-08E70E0B4BF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70128571-BDB0-40A1-8FA5-08E70E0B4BF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{403436F3-65A6-4DCF-BFEE-DA86A205FB08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{403436F3-65A6-4DCF-BFEE-DA86A205FB08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{403436F3-65A6-4DCF-BFEE-DA86A205FB08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{403436F3-65A6-4DCF-BFEE-DA86A205FB08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E34E01FA-DB80-4070-B7FC-EF82B77F5068}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E34E01FA-DB80-4070-B7FC-EF82B77F5068}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E34E01FA-DB80-4070-B7FC-EF82B77F5068}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E34E01FA-DB80-4070-B7FC-EF82B77F5068}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C076769-C2DD-4E88-80F1-8D9714249CBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C076769-C2DD-4E88-80F1-8D9714249CBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C076769-C2DD-4E88-80F1-8D9714249CBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C076769-C2DD-4E88-80F1-8D9714249CBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E0583D9-76E3-4E71-BE46-A00EC3F8D729}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E0583D9-76E3-4E71-BE46-A00EC3F8D729}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E0583D9-76E3-4E71-BE46-A00EC3F8D729}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E0583D9-76E3-4E71-BE46-A00EC3F8D729}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C91C6FF1-9CBD-4A00-BB79-1F237EDC1263}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C91C6FF1-9CBD-4A00-BB79-1F237EDC1263}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C91C6FF1-9CBD-4A00-BB79-1F237EDC1263}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C91C6FF1-9CBD-4A00-BB79-1F237EDC1263}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6391606-3147-414D-BC59-002342D2DCEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6391606-3147-414D-BC59-002342D2DCEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6391606-3147-414D-BC59-002342D2DCEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6391606-3147-414D-BC59-002342D2DCEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E88FE26-4866-47C5-92CA-D2840C970826}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E88FE26-4866-47C5-92CA-D2840C970826}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E88FE26-4866-47C5-92CA-D2840C970826}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E88FE26-4866-47C5-92CA-D2840C970826}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E20E4C7-FE27-484B-85EB-433880D4330C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E20E4C7-FE27-484B-85EB-433880D4330C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E20E4C7-FE27-484B-85EB-433880D4330C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E20E4C7-FE27-484B-85EB-433880D4330C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E66E54E4-AFEF-4048-B364-1F376CEB9689}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E66E54E4-AFEF-4048-B364-1F376CEB9689}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E66E54E4-AFEF-4048-B364-1F376CEB9689}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E66E54E4-AFEF-4048-B364-1F376CEB9689}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B523EBCD-9CAB-4D37-BF4F-63D1C8CCBC3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B523EBCD-9CAB-4D37-BF4F-63D1C8CCBC3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B523EBCD-9CAB-4D37-BF4F-63D1C8CCBC3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B523EBCD-9CAB-4D37-BF4F-63D1C8CCBC3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6484DA0F-9253-407A-858F-51E2613B5346}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6484DA0F-9253-407A-858F-51E2613B5346}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6484DA0F-9253-407A-858F-51E2613B5346}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6484DA0F-9253-407A-858F-51E2613B5346}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E486266-2FEC-4ED3-BA58-A87085F118F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E486266-2FEC-4ED3-BA58-A87085F118F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E486266-2FEC-4ED3-BA58-A87085F118F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E486266-2FEC-4ED3-BA58-A87085F118F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0DA0274-42B6-455D-BAA5-196B6BF04569}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0DA0274-42B6-455D-BAA5-196B6BF04569}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0DA0274-42B6-455D-BAA5-196B6BF04569}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0DA0274-42B6-455D-BAA5-196B6BF04569}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14EAC91F-5F57-47CD-9B8D-182979CC2479}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14EAC91F-5F57-47CD-9B8D-182979CC2479}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14EAC91F-5F57-47CD-9B8D-182979CC2479}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14EAC91F-5F57-47CD-9B8D-182979CC2479}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22A247E1-918B-4912-B226-F8F49C776DCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22A247E1-918B-4912-B226-F8F49C776DCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22A247E1-918B-4912-B226-F8F49C776DCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22A247E1-918B-4912-B226-F8F49C776DCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{816BF417-4312-462C-BD55-4538A848A933}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{816BF417-4312-462C-BD55-4538A848A933}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{816BF417-4312-462C-BD55-4538A848A933}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{816BF417-4312-462C-BD55-4538A848A933}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -532,6 +669,8 @@ Global
 		{A9B8EDEC-702D-4ADD-A3E6-8A8169AB091E} = {3D5E1A23-024C-4565-9BC1-F24E585A127B}
 		{D9B5D592-D609-4B5A-8805-BB291F561C5A} = {3D5E1A23-024C-4565-9BC1-F24E585A127B}
 		{B911AA3A-8802-4129-9A12-4207EFB68B95} = {3D5E1A23-024C-4565-9BC1-F24E585A127B}
+		{3D5E1A23-024C-4565-9BC1-F24E585A127B} = {9684DE79-9A4B-400A-8B8D-B5962F0A26C2}
+		{8C806A2B-7D36-42FE-8495-EA810C19241F} = {9684DE79-9A4B-400A-8B8D-B5962F0A26C2}
 		{67B349A2-3C7C-4FAA-B6BD-46E99540EAF5} = {8C806A2B-7D36-42FE-8495-EA810C19241F}
 		{C896D9C2-88F9-4C7F-B4CA-5E0E980F6EF0} = {8C806A2B-7D36-42FE-8495-EA810C19241F}
 		{683C5FE1-B33E-4E55-AE21-6FB6156FA41D} = {8C806A2B-7D36-42FE-8495-EA810C19241F}
@@ -590,6 +729,7 @@ Global
 		{BF518153-2940-4FBC-8ABE-4783BAF4F108} = {8C806A2B-7D36-42FE-8495-EA810C19241F}
 		{A49D7687-343D-4D6F-BDE9-88104104E68C} = {8C806A2B-7D36-42FE-8495-EA810C19241F}
 		{173E256F-5734-432D-87F3-08196D3E092D} = {8C806A2B-7D36-42FE-8495-EA810C19241F}
+		{14688555-402B-4B35-B5E3-744776AE1B8A} = {9684DE79-9A4B-400A-8B8D-B5962F0A26C2}
 		{6F51C3C3-52E9-4138-8D0E-1D69BC4EE775} = {14688555-402B-4B35-B5E3-744776AE1B8A}
 		{F373CAD9-F3D2-42B5-9A17-C40069334AAA} = {14688555-402B-4B35-B5E3-744776AE1B8A}
 		{674C0E5A-BBB4-4CD0-9429-AF41E1A6DC01} = {14688555-402B-4B35-B5E3-744776AE1B8A}
@@ -606,6 +746,29 @@ Global
 		{2D213DB9-0447-44CB-B2A3-E9EF3B0FE247} = {14688555-402B-4B35-B5E3-744776AE1B8A}
 		{059498C5-08FB-4B29-A1E8-2987408970E2} = {14688555-402B-4B35-B5E3-744776AE1B8A}
 		{35473D7E-BBE1-4345-9AEA-0821A08B72D6} = {14688555-402B-4B35-B5E3-744776AE1B8A}
+		{6E79D378-6727-4A9A-B9A3-25E7E4E01236} = {9684DE79-9A4B-400A-8B8D-B5962F0A26C2}
+		{1EF3155F-034C-40AD-B3FE-27D1F485BF6C} = {6E79D378-6727-4A9A-B9A3-25E7E4E01236}
+		{3FD0D8A0-2934-4EF3-917D-CEFF7C85340C} = {6E79D378-6727-4A9A-B9A3-25E7E4E01236}
+		{D34A199C-15C6-4267-AAC4-CAD3008E6833} = {6E79D378-6727-4A9A-B9A3-25E7E4E01236}
+		{C14505BD-14C9-4AA4-871C-EDE53B0FC2B2} = {6E79D378-6727-4A9A-B9A3-25E7E4E01236}
+		{1777F0FB-E79A-4DD8-85D2-611D64F85EAD} = {6E79D378-6727-4A9A-B9A3-25E7E4E01236}
+		{70128571-BDB0-40A1-8FA5-08E70E0B4BF1} = {6E79D378-6727-4A9A-B9A3-25E7E4E01236}
+		{403436F3-65A6-4DCF-BFEE-DA86A205FB08} = {6E79D378-6727-4A9A-B9A3-25E7E4E01236}
+		{E34E01FA-DB80-4070-B7FC-EF82B77F5068} = {6E79D378-6727-4A9A-B9A3-25E7E4E01236}
+		{7C076769-C2DD-4E88-80F1-8D9714249CBA} = {6E79D378-6727-4A9A-B9A3-25E7E4E01236}
+		{6E0583D9-76E3-4E71-BE46-A00EC3F8D729} = {6E79D378-6727-4A9A-B9A3-25E7E4E01236}
+		{C91C6FF1-9CBD-4A00-BB79-1F237EDC1263} = {6E79D378-6727-4A9A-B9A3-25E7E4E01236}
+		{B6391606-3147-414D-BC59-002342D2DCEF} = {6E79D378-6727-4A9A-B9A3-25E7E4E01236}
+		{4E88FE26-4866-47C5-92CA-D2840C970826} = {6E79D378-6727-4A9A-B9A3-25E7E4E01236}
+		{8E20E4C7-FE27-484B-85EB-433880D4330C} = {6E79D378-6727-4A9A-B9A3-25E7E4E01236}
+		{E66E54E4-AFEF-4048-B364-1F376CEB9689} = {6E79D378-6727-4A9A-B9A3-25E7E4E01236}
+		{B523EBCD-9CAB-4D37-BF4F-63D1C8CCBC3A} = {6E79D378-6727-4A9A-B9A3-25E7E4E01236}
+		{6484DA0F-9253-407A-858F-51E2613B5346} = {6E79D378-6727-4A9A-B9A3-25E7E4E01236}
+		{3E486266-2FEC-4ED3-BA58-A87085F118F3} = {6E79D378-6727-4A9A-B9A3-25E7E4E01236}
+		{F0DA0274-42B6-455D-BAA5-196B6BF04569} = {6E79D378-6727-4A9A-B9A3-25E7E4E01236}
+		{14EAC91F-5F57-47CD-9B8D-182979CC2479} = {6E79D378-6727-4A9A-B9A3-25E7E4E01236}
+		{22A247E1-918B-4912-B226-F8F49C776DCB} = {6E79D378-6727-4A9A-B9A3-25E7E4E01236}
+		{816BF417-4312-462C-BD55-4538A848A933} = {6E79D378-6727-4A9A-B9A3-25E7E4E01236}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6CEE4B8A-8E9E-4D20-9B02-59E7A15EDB3F}
