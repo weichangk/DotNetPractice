@@ -72,6 +72,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppMainFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppMainFrm.Designer.cs">
+      <DependentUpon>AppMainFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlsEx\ControlHelper.cs" />
+    <Compile Include="ControlsEx\TreeViewEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="XlsIOHelperTestFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +90,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AppMainFrm.resx">
+      <DependentUpon>AppMainFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="XlsIOHelperTestFrm.resx">
       <DependentUpon>XlsIOHelperTestFrm.cs</DependentUpon>
     </EmbeddedResource>

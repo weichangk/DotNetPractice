@@ -16,7 +16,7 @@ namespace UtilApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new XlsIOHelperTestFrm());
+            Application.Run(new AppMainFrm());
         }
     }
 }
