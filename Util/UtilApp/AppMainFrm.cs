@@ -48,6 +48,7 @@ namespace UtilApp
             //tnForm.Nodes.Add("确定取消窗体2");
             //tnForm.Nodes.Add("资源加载窗体");
             //this.TvMenu.Nodes.Add(tnForm);
+            this.TvMenu.Nodes.Add("SecurityTest");
         }
 
         private void TvMenu_AfterSelect(object sender, TreeViewEventArgs e)
@@ -59,6 +60,9 @@ namespace UtilApp
             {
                 case "XlsIOHelperTest":
                     AddControl(new XlsIOHelperTestFrm(), this.PlBody);
+                    break;
+                case "SecurityTest":
+                    AddControl(new SecurityFrm(), this.PlBody);
                     break;
             }
         }

@@ -9,7 +9,7 @@ namespace Util
     /// </summary>
     public class DESEncrypt
     {
-        private static string key = "weick###***";
+        public static string Key { get; set; } = "weick###***";
 
         #region ========加密========
         /// <summary>
@@ -19,7 +19,7 @@ namespace Util
         /// <returns></returns>
         public static string Encrypt(string Text)
         {
-            return Encrypt(Text, key);
+            return Encrypt(Text, Key);
         }
         /// <summary> 
         /// 加密数据 
@@ -58,7 +58,7 @@ namespace Util
         {
             if (!string.IsNullOrEmpty(Text))
             {
-                return Decrypt(Text, key);
+                return Decrypt(Text, Key);
             }
             else
             {

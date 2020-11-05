@@ -4,7 +4,7 @@ using System.Text;
 namespace Util
 {
     /// <summary>
-    /// MD5加密、解密类
+    /// MD5加密类
     /// </summary>
     public class Md5Helper
     {

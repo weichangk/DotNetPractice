@@ -82,6 +82,12 @@
     <Compile Include="ControlsEx\TreeViewEx.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="SecurityFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecurityFrm.Designer.cs">
+      <DependentUpon>SecurityFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="XlsIOHelperTestFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +98,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AppMainFrm.resx">
       <DependentUpon>AppMainFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecurityFrm.resx">
+      <DependentUpon>SecurityFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="XlsIOHelperTestFrm.resx">
       <DependentUpon>XlsIOHelperTestFrm.cs</DependentUpon>
