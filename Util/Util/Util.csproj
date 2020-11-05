@@ -58,6 +58,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Excel\XlsIOHelper.cs" />
+    <Compile Include="File\DirFileHelper.cs" />
+    <Compile Include="File\FileDownHelper.cs" />
     <Compile Include="Loger\Log.cs" />
     <Compile Include="Loger\LogFactory.cs" />
     <Compile Include="Loger\LogFormat.cs" />
