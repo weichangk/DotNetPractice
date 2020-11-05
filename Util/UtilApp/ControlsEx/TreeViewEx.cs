@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using UtilApp.Properties;
 
-namespace UtilApp
+namespace UtilApp.ControlsEx
 {
     /// <summary>
     /// Class TreeViewEx.

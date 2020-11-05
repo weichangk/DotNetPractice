@@ -1,4 +1,4 @@
-﻿namespace UtilApp
+﻿namespace UtilApp.Forms
 {
     partial class XlsIOHelperTestFrm
     {

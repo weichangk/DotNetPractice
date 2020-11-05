@@ -72,37 +72,43 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppMainFrm.cs">
+    <Compile Include="Forms\AppMainFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AppMainFrm.Designer.cs">
+    <Compile Include="Forms\AppMainFrm.Designer.cs">
       <DependentUpon>AppMainFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="ControlsEx\ControlHelper.cs" />
     <Compile Include="ControlsEx\TreeViewEx.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="SecurityFrm.cs">
+    <Compile Include="Forms\LogerFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SecurityFrm.Designer.cs">
+    <Compile Include="Forms\LogerFrm.Designer.cs">
+      <DependentUpon>LogerFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SecurityFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SecurityFrm.Designer.cs">
       <DependentUpon>SecurityFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="XlsIOHelperTestFrm.cs">
+    <Compile Include="Forms\XlsIOHelperTestFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="XlsIOHelperTestFrm.Designer.cs">
+    <Compile Include="Forms\XlsIOHelperTestFrm.Designer.cs">
       <DependentUpon>XlsIOHelperTestFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AppMainFrm.resx">
+    <EmbeddedResource Include="Forms\AppMainFrm.resx">
       <DependentUpon>AppMainFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SecurityFrm.resx">
+    <EmbeddedResource Include="Forms\SecurityFrm.resx">
       <DependentUpon>SecurityFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="XlsIOHelperTestFrm.resx">
+    <EmbeddedResource Include="Forms\XlsIOHelperTestFrm.resx">
       <DependentUpon>XlsIOHelperTestFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

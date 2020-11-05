@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Util;
 
-namespace UtilApp
+namespace UtilApp.Forms
 {
     public partial class SecurityFrm : Form
     {

@@ -1,4 +1,6 @@
-﻿namespace UtilApp
+﻿using UtilApp.ControlsEx;
+
+namespace UtilApp.Forms
 {
     partial class AppMainFrm
     {
@@ -30,7 +32,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AppMainFrm));
             this.PlBody = new System.Windows.Forms.Panel();
-            this.TvMenu = new UtilApp.TreeViewEx();
+            this.TvMenu = new TreeViewEx();
             this.SuspendLayout();
             // 
             // PlBody
