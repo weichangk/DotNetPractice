@@ -60,6 +60,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\CommonHelper.cs" />
     <Compile Include="Config\Config.cs" />
     <Compile Include="Excel\XlsIOHelper.cs" />
     <Compile Include="File\DirFileHelper.cs" />
