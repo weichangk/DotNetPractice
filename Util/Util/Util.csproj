@@ -37,6 +37,7 @@
     <Reference Include="LumiSoft.Net, Version=4.5.7529.20874, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\LumiSoft.Net.dll.4.5.7529.20877\lib\net45\Release\LumiSoft.Net.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Syncfusion.Compression.Base, Version=18.3460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <HintPath>..\packages\Syncfusion.Compression.Base.18.3.0.44\lib\net46\Syncfusion.Compression.Base.dll</HintPath>
     </Reference>
@@ -76,6 +77,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Security\DESEncrypt.cs" />
     <Compile Include="Security\Md5Helper.cs" />
+    <Compile Include="String\Const.cs" />
+    <Compile Include="String\Str.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
