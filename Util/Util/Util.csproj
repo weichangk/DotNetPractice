@@ -38,6 +38,9 @@
       <HintPath>..\packages\LumiSoft.Net.dll.4.5.7529.20877\lib\net45\Release\LumiSoft.Net.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Syncfusion.Compression.Base, Version=18.3460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <HintPath>..\packages\Syncfusion.Compression.Base.18.3.0.44\lib\net46\Syncfusion.Compression.Base.dll</HintPath>
     </Reference>
@@ -64,6 +67,12 @@
     <Compile Include="Common\CommonHelper.cs" />
     <Compile Include="Config\Config.cs" />
     <Compile Include="Excel\XlsIOHelper.cs" />
+    <Compile Include="Extensions\Extensions.Convert.cs" />
+    <Compile Include="Extensions\Extensions.DateTime.cs" />
+    <Compile Include="Extensions\Extensions.Json.cs" />
+    <Compile Include="Extensions\Extensions.List.cs" />
+    <Compile Include="Extensions\Extensions.Nullable.cs" />
+    <Compile Include="Extensions\Extensions.Validate.cs" />
     <Compile Include="File\DirFileHelper.cs" />
     <Compile Include="File\FileDownHelper.cs" />
     <Compile Include="Loger\Log.cs" />
@@ -79,6 +88,7 @@
     <Compile Include="Security\Md5Helper.cs" />
     <Compile Include="String\Const.cs" />
     <Compile Include="String\Str.cs" />
+    <Compile Include="Time\Time.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
