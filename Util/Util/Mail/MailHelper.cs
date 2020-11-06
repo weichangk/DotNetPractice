@@ -8,6 +8,7 @@ using System.Net;
 using System.Net.Mail;
 using System.Text;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace Util
 {
@@ -25,7 +26,7 @@ namespace Util
         /// </summary>
         private static string MailUserName = Config.GetValue("MailUserName");
         /// <summary>
-        /// 密码
+        /// 密码/授权码
         /// </summary>
         private static string MailPassword = Config.GetValue("MailPassword");
         /// <summary>
@@ -56,32 +57,32 @@ namespace Util
                 message.SubjectEncoding = Encoding.GetEncoding(encoding);
                 message.Subject = subject;
                 message.IsBodyHtml = isBodyHtml;
-
                 SmtpClient smtpclient = new SmtpClient(MailServer, 25);
                 smtpclient.Credentials = new System.Net.NetworkCredential(MailUserName, MailPassword);
                 //SSL连接
                 smtpclient.EnableSsl = enableSsl;
+                //发送
                 smtpclient.Send(message);
                 return true;
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.ToString());
-                return false;
+                throw ex;
             }
         }
 
         /// <summary>
-        /// 异步发送邮件 独立线程
+        /// 异步发送邮件
         /// </summary>
+        /// <param name="succeedAction">邮件发送成功回调</param>
+        /// <param name="failAction">邮件发送异常回调</param>
         /// <param name="to">邮件接收人</param>
         /// <param name="title">邮件标题</param>
         /// <param name="body">邮件内容</param>
         /// <param name="port">端口号</param>
-        /// <returns></returns>
-        public static void SendByThread(string to, string title, string body, int port = 25)
+        public static void AsynSend(Action succeedAction, Action<Exception> failAction, string to, string title, string body, int port = 25)
         {
-            new Thread(new ThreadStart(delegate ()
+            var task = Task.Run(() =>
             {
                 try
                 {
@@ -111,14 +112,18 @@ namespace Util
                     objMailMessage.BodyEncoding = System.Text.Encoding.UTF8;
                     //发送
                     smtp.Send(objMailMessage);
+
+                    succeedAction();
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(ex.ToString());
+                    //线程内无法向外抛异常，用回调取代
+                    failAction(ex);
                 }
+            });
 
-            })).Start();
         }
+
         /// <summary>
         /// 发送
         /// </summary>

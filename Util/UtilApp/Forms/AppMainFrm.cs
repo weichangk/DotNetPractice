@@ -49,6 +49,7 @@ namespace UtilApp.Forms
             //tnForm.Nodes.Add("资源加载窗体");
             //this.TvMenu.Nodes.Add(tnForm);
             this.TvMenu.Nodes.Add("SecurityTest");
+            this.TvMenu.Nodes.Add("MailTest");
         }
 
         private void TvMenu_AfterSelect(object sender, TreeViewEventArgs e)
@@ -63,6 +64,9 @@ namespace UtilApp.Forms
                     break;
                 case "SecurityTest":
                     AddControl(new SecurityFrm(), this.PlBody);
+                    break;
+                case "MailTest":
+                    AddControl(new MailFrm(), this.PlBody);
                     break;
             }
         }
