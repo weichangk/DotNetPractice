@@ -80,7 +80,7 @@ namespace Util
         /// <param name="title">邮件标题</param>
         /// <param name="body">邮件内容</param>
         /// <param name="port">端口号</param>
-        public static void AsynSend(Action succeedAction, Action<Exception> failAction, string to, string title, string body, int port = 25)
+        public static void AsynSend(Action<string, string, string> succeedAction, Action<Exception, string, string, string> failAction, string to, string title, string body, int port = 25)
         {
             var task = Task.Run(() =>
             {
@@ -113,12 +113,12 @@ namespace Util
                     //发送
                     smtp.Send(objMailMessage);
 
-                    succeedAction();
+                    succeedAction(to, title, body);
                 }
                 catch (Exception ex)
                 {
                     //线程内无法向外抛异常，用回调取代
-                    failAction(ex);
+                    failAction(ex, to, title, body);
                 }
             });
 

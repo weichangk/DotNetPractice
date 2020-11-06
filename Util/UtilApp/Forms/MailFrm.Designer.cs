@@ -91,7 +91,6 @@
             this.TxbTo.Name = "TxbTo";
             this.TxbTo.Size = new System.Drawing.Size(432, 21);
             this.TxbTo.TabIndex = 5;
-            this.TxbTo.Text = "1060484318@qq.com";
             // 
             // TxbSubject
             // 

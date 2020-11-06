@@ -46,21 +46,21 @@ namespace UtilApp.Forms
         {
             for (int i = 0; i < 10; i++)
             {
-                this.TxbSubject.Text += i.ToString();
-                this.RichtxbBody.Text += i.ToString();
-
-                MailHelper.AsynSend(() => {
-                    string to = this.TxbTo.Text;
-                    string subject = this.TxbSubject.Text;
-                    string body = this.RichtxbBody.Text;//重新赋值解决闭包？ 还是不行，日志内容还是一样
+                this.TxbSubject.Text += i;
+                this.RichtxbBody.Text += i;
+                MailHelper.AsynSend((to, subject, body) => {
                     log.Info("邮件发送成功:" + Environment.NewLine +
                         to + Environment.NewLine +
                         subject + Environment.NewLine +
                         body + Environment.NewLine
                         );
                     MessageBox.Show("邮件发送成功");
-                }, (ex) => {
-                    log.Error("邮件发送失败: " + ex.Message);
+                }, (ex, to, subject, body) => {
+                    log.Error("邮件发送失败: " + ex.Message + Environment.NewLine +
+                        to + Environment.NewLine +
+                        subject + Environment.NewLine +
+                        body + Environment.NewLine
+                        );
                     MessageBox.Show(ex.Message);
                 }, this.TxbTo.Text, this.TxbSubject.Text, this.RichtxbBody.Text);
             }
