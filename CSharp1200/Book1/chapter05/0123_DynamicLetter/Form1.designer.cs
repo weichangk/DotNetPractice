@@ -43,7 +43,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::DynamicLetter.Properties.Resources.bc;
+            //this.BackgroundImage = global::DynamicLetter.Properties.Resources.bc;
             this.ClientSize = new System.Drawing.Size(600, 416);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
