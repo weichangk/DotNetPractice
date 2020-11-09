@@ -64,6 +64,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attributes\EnumAttribute.cs" />
     <Compile Include="Common\CommonHelper.cs" />
     <Compile Include="Config\Config.cs" />
     <Compile Include="Excel\XlsIOHelper.cs" />
