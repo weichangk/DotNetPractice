@@ -38,7 +38,7 @@ namespace DataBase.Oracle
         {
             System.Data.Entity.Database.SetInitializer<DatabaseContext>(null);
 
-            string assembleFileName = Assembly.GetExecutingAssembly().CodeBase.Replace("Learun.DataBase.Oracle.DLL", "Learun.Application.Mapping.DLL").Replace("file:///", "");
+            string assembleFileName = Assembly.GetExecutingAssembly().CodeBase.Replace("DataBase.Oracle.DLL", "Application.Mapping.DLL").Replace("file:///", "");
             Assembly asm = Assembly.LoadFile(assembleFileName);
             var typesToRegister = asm.GetTypes()
             .Where(type => !String.IsNullOrEmpty(type.Namespace))

@@ -34,7 +34,7 @@ namespace DataBase.MySql
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             System.Data.Entity.Database.SetInitializer<DatabaseContext>(null);
-            string assembleFileName = Assembly.GetExecutingAssembly().CodeBase.Replace("Learun.DataBase.MySqlEx.DLL", "Learun.Application.Mapping.DLL").Replace("file:///", "");
+            string assembleFileName = Assembly.GetExecutingAssembly().CodeBase.Replace("DataBase.MySqlEx.DLL", "Application.Mapping.DLL").Replace("file:///", "");
             Assembly asm = Assembly.LoadFile(assembleFileName);
             var typesToRegister = asm.GetTypes()
             .Where(type => !String.IsNullOrEmpty(type.Namespace))
