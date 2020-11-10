@@ -67,6 +67,7 @@
     <Compile Include="Attributes\EnumAttribute.cs" />
     <Compile Include="Common\CommonHelper.cs" />
     <Compile Include="Config\Config.cs" />
+    <Compile Include="CSV\CSVHelper.cs" />
     <Compile Include="Excel\XlsIOHelper.cs" />
     <Compile Include="Extensions\Extensions.Convert.cs" />
     <Compile Include="Extensions\Extensions.DateTime.cs" />
