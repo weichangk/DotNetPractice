@@ -95,6 +95,7 @@
     <Compile Include="String\Const.cs" />
     <Compile Include="String\Str.cs" />
     <Compile Include="Time\Time.cs" />
+    <Compile Include="XML\Xml.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
