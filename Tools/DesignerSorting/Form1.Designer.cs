@@ -103,8 +103,9 @@
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.BtnExport);
+            this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Designer Sorting";
             this.ResumeLayout(false);
             this.PerformLayout();
 

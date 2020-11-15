@@ -139,7 +139,7 @@ namespace DesignerSorting
                 {
                     using (System.IO.StreamWriter sw = new StreamWriter(System.AppDomain.CurrentDomain.BaseDirectory + "Log.txt", true, Encoding.UTF8))
                     {
-                        sw.WriteLine(DateTime.Now + Environment.NewLine + "文件无效，无数据导出");
+                        sw.WriteLine(DateTime.Now + "   :" + objectName + Environment.NewLine + "文件无效，无数据导出");
                     }
                     return null;
                 }
@@ -200,7 +200,14 @@ namespace DesignerSorting
                         List<string> tempList = new List<string>();
                         tempList.AddRange(linesList);
                         linesList.Clear();
-                        dictionary.Add(objectName, tempList);
+                        if (dictionary.ContainsKey(objectName))
+                        {
+                            dictionary[objectName].AddRange(tempList);
+                        }
+                        else
+                        {
+                            dictionary.Add(objectName, tempList);
+                        }
 
                         bottomList = new List<string>();
                         for (int j = i - 1; j < lines - 1; j++)
@@ -265,7 +272,7 @@ namespace DesignerSorting
                 {
                     using (System.IO.StreamWriter sw = new StreamWriter(System.AppDomain.CurrentDomain.BaseDirectory + "Log.txt", true, Encoding.UTF8))
                     {
-                        sw.WriteLine(DateTime.Now + Environment.NewLine + "文件无效，无数据导出");
+                        sw.WriteLine(DateTime.Now + "   :" + objectName + Environment.NewLine + "文件无效，无数据导出");
                     }
                     return null;
                 }
