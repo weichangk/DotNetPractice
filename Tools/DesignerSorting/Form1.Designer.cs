@@ -28,23 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnExport = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.BtnTransition = new System.Windows.Forms.Button();
             this.BtnSelect = new System.Windows.Forms.Button();
             this.TBSelectFilePath = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // button1
+            // BtnExport
             // 
-            this.button1.Location = new System.Drawing.Point(588, 28);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BtnExport.Location = new System.Drawing.Point(588, 28);
+            this.BtnExport.Name = "BtnExport";
+            this.BtnExport.Size = new System.Drawing.Size(75, 23);
+            this.BtnExport.TabIndex = 0;
+            this.BtnExport.Text = "导出";
+            this.BtnExport.UseVisualStyleBackColor = true;
+            this.BtnExport.Click += new System.EventHandler(this.BtnExport_Click);
             // 
             // richTextBox1
             // 
@@ -64,15 +64,15 @@
             this.richTextBox2.Text = "";
             this.richTextBox2.WordWrap = false;
             // 
-            // button2
+            // BtnTransition
             // 
-            this.button2.Location = new System.Drawing.Point(518, 228);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(66, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.BtnTransition.Location = new System.Drawing.Point(518, 228);
+            this.BtnTransition.Name = "BtnTransition";
+            this.BtnTransition.Size = new System.Drawing.Size(66, 23);
+            this.BtnTransition.TabIndex = 3;
+            this.BtnTransition.Text = "》》》";
+            this.BtnTransition.UseVisualStyleBackColor = true;
+            this.BtnTransition.Click += new System.EventHandler(this.BtnTransition_Click);
             // 
             // BtnSelect
             // 
@@ -99,10 +99,10 @@
             this.ClientSize = new System.Drawing.Size(1107, 473);
             this.Controls.Add(this.TBSelectFilePath);
             this.Controls.Add(this.BtnSelect);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.BtnTransition);
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BtnExport);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -112,10 +112,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnExport;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BtnTransition;
         private System.Windows.Forms.Button BtnSelect;
         private System.Windows.Forms.TextBox TBSelectFilePath;
     }
