@@ -22,17 +22,17 @@ namespace DesignerSorting
 
         private Dictionary<string, List<string>> DataLoadToDictionary(string path, out List<string> headList, out List<string> bottomList)
         {
+            headList = null;
+            bottomList = null;
+            List<string> fileList = new List<string>();
+            List<string> linesList = new List<string>();
+            StringBuilder lineTemp = new StringBuilder();
+            string objectName = string.Empty;
+            bool begin = false;
+            int lines;
+            Dictionary<string, List<string>> dictionary = new Dictionary<string, List<string>>();
             try
             {
-                headList = null;
-                bottomList = null;
-                List<string> fileList = new List<string>();
-                List<string> linesList = new List<string>();
-                StringBuilder lineTemp = new StringBuilder();
-                string objectName = string.Empty;
-                bool begin = false;
-                int lines;
-                Dictionary<string, List<string>> dictionary = new Dictionary<string, List<string>>();
                 using (StreamReader sr = new StreamReader(path, Encoding.Default))
                 {
                     lines = 1;
@@ -67,7 +67,14 @@ namespace DesignerSorting
                         List<string> tempList = new List<string>();
                         tempList.AddRange(linesList);
                         linesList.Clear();
-                        dictionary.Add(objectName, tempList);
+                        if (dictionary.ContainsKey(objectName))
+                        {
+                            dictionary[objectName].AddRange(tempList);
+                        }
+                        else
+                        {
+                            dictionary.Add(objectName, tempList);
+                        }
 
                         bottomList = new List<string>();
                         for (int j = i - 1; j < lines - 1; j++)
@@ -142,7 +149,7 @@ namespace DesignerSorting
             {
                 using (System.IO.StreamWriter sw = new StreamWriter(System.AppDomain.CurrentDomain.BaseDirectory + "Log.txt", true, Encoding.UTF8))
                 {
-                    sw.WriteLine(DateTime.Now + Environment.NewLine + ex.Message);
+                    sw.WriteLine(DateTime.Now + "   :" + objectName + Environment.NewLine + ex.Message);
                 }
                 headList = null;
                 bottomList = null;
@@ -151,17 +158,17 @@ namespace DesignerSorting
         }
         private Dictionary<string, List<string>> RichTextDataLoadToDictionary(RichTextBox richTextBox, out List<string> headList, out List<string> bottomList)
         {
+            headList = null;
+            bottomList = null;
+            List<string> fileList = new List<string>();
+            List<string> linesList = new List<string>();
+            StringBuilder lineTemp = new StringBuilder();
+            string objectName = string.Empty;
+            bool begin = false;
+            int lines = 1;
+            Dictionary<string, List<string>> dictionary = new Dictionary<string, List<string>>();
             try
             {
-                headList = null;
-                bottomList = null;
-                List<string> fileList = new List<string>();
-                List<string> linesList = new List<string>();
-                StringBuilder lineTemp = new StringBuilder();
-                string objectName = string.Empty;
-                bool begin = false;
-                int lines = 1;
-                Dictionary<string, List<string>> dictionary = new Dictionary<string, List<string>>();
                 foreach (var item in richTextBox.Lines)
                 {
                     lines++;
@@ -268,7 +275,7 @@ namespace DesignerSorting
             {
                 using (System.IO.StreamWriter sw = new StreamWriter(System.AppDomain.CurrentDomain.BaseDirectory + "Log.txt", true, Encoding.UTF8))
                 {
-                    sw.WriteLine(DateTime.Now + Environment.NewLine + ex.Message);
+                    sw.WriteLine(DateTime.Now + "   :" + objectName + Environment.NewLine + ex.Message);
                 }
                 headList = null;
                 bottomList = null;
