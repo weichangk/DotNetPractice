@@ -32,3 +32,4 @@ bld/
 /Util/packages/
 /DataAccess/packages/
 /SignalR/packages/
+/RabbitMQ/packages/
