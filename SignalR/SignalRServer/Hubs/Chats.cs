@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 namespace SignalRServer
 {
     /// <summary>
-    /// 版 本 Learun-ADMS V7.0.0 力软敏捷开发框架
-    /// Copyright (c) 2013-2018 上海力软信息技术有限公司
-    /// 创建人：力软-框架开发组
-    /// 日 期：2017.04.01
-    /// 描 述：即使通信服务(可供客户端调用的方法开头用小写)
+    /// 即使通信服务(可供客户端调用的方法开头用小写)
     /// </summary>
     [HubName("ChatsHub")]
     public class Chats : Hub
@@ -46,52 +42,29 @@ namespace SignalRServer
         }
         #endregion
 
-        #region 客户端操作
+        #region 私有方法
         /// <summary>
         /// 添加在线用户
         /// </summary>
-        public void AddOnline()
+        private void AddOnline()
         {
             string clientId = Context.ConnectionId;
             string userId = GetUserId();
             Groups.Add(clientId, userId);
+            Console.WriteLine($"ClientId:{clientId} UserId:{userId} AddOnline");
+            Startup.log.Info($"ClientId:{clientId} UserId:{userId} AddOnline");
         }
         /// <summary>
         /// 移除在线用户
         /// </summary>
-        public void RemoveOnline()
+        private void RemoveOnline()
         {
             string clientId = Context.ConnectionId;
             string userId = GetUserId();
-
             Groups.Remove(clientId, userId);
+            Console.WriteLine($"ClientId:{clientId} UserId:{userId} RemoveOnline");
+            Startup.log.Info($"ClientId:{clientId} UserId:{userId} RemoveOnline");
         }
-        /// <summary>
-        /// 发送消息
-        /// </summary>
-        /// <param name="toUserId">对方UserId</param>
-        /// <param name="msg">消息</param>
-        /// <param name="isSystem">是否系统消息0不是1是</param>
-        public void SendMsg(string toUserId, string msg, int isSystem)
-        {
-            string userId = GetUserId();
-            Clients.Group(toUserId).RevMsg(userId, msg, DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), isSystem);
-        }
-        /// <summary>
-        /// 发送消息
-        /// </summary>
-        /// <param name="myUserId">我的UserId</param>
-        /// <param name="toUserId">对方UserId</param>
-        /// <param name="msg">消息</param>
-        /// <param name="isSystem">是否系统消息0不是1是</param>
-        public void SendMsg2(string myUserId, string toUserId, string msg, int isSystem)
-        {
-            Clients.Group(toUserId).RevMsg(myUserId, msg, DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), isSystem);
-        }
-
-        #endregion
-
-        #region 一般公用方法
         /// <summary>
         /// 获取登录用户Id
         /// </summary>
@@ -99,11 +72,41 @@ namespace SignalRServer
         private string GetUserId()
         {
             string userId = "";
-            if (Context.QueryString["userId"] != null)
+            if (Context.QueryString["UserId"] != null)
             {
-                userId = Context.QueryString["userId"];
+                userId = Context.QueryString["UserId"];
             }
             return userId;
+        }
+        #endregion
+
+        #region 客户端操作
+        /// <summary>
+        /// 根据接收方客户端id发送消息
+        /// </summary>
+        /// <param name="sendUserId">发送方Id</param>
+        /// <param name="revUserId">接收方Id，多客户端Id相同则都收到信息</param>
+        /// <param name="msg">消息</param>
+        /// <param name="time">发送时间</param>
+        /// <param name="isSysMsg">是否系统消息</param>
+        public void SendMsgByUserId(string sendUserId, string revUserId, string msg, DateTime time, bool isSysMsg)
+        {
+            Clients.Group(revUserId).RevMsg(sendUserId, msg, time, isSysMsg);
+            Console.WriteLine($"{time} isSysMsg:{isSysMsg} Id:{sendUserId} Send To Id:{revUserId} Msg:{msg}");
+            Startup.log.Info($"{time} isSysMsg:{isSysMsg} Id:{sendUserId} Send To Id:{revUserId} Msg:{msg}");
+        }
+        /// <summary>
+        /// 向所有客户端发送消息
+        /// </summary>
+        /// <param name="sendUserId">发送方Id</param>
+        /// <param name="msg">消息</param>
+        /// <param name="time">发送时间</param>
+        /// <param name="isSysMsg">是否系统消息</param>
+        public void SendMsgAll(string sendUserId, string msg, DateTime time, bool isSysMsg)
+        {
+            this.Clients.All.RevMsg(sendUserId, msg, time, isSysMsg);
+            Console.WriteLine($"{time} isSysMsg:{isSysMsg} Id:{sendUserId} Send Msg:{msg}");
+            Startup.log.Info($"{time} isSysMsg:{isSysMsg} Id:{sendUserId} Send Msg:{msg}");
         }
         #endregion
     }

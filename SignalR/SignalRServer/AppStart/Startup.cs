@@ -5,19 +5,23 @@ using Microsoft.Owin.Hosting;
 using System;
 using System.Reflection;
 using System.Configuration;
+using log4net;
 
 namespace SignalRServer
 {
     public class Startup
     {
+        public static ILog log = LogManager.GetLogger("SignalR Server Log");
         /// <summary>
         /// 开启服务
         /// </summary>
         public static void Start()
         {
+            //string SignalRURI = @"https://localhost:44342/";
             string SignalRURI = ConfigurationManager.AppSettings["SignalRServerUrl"].ToString().Trim();
             try
             {
+                log4net.Config.XmlConfigurator.Configure();
                 try
                 {
                     using (WebApp.Start(SignalRURI, builder =>
@@ -46,18 +50,21 @@ namespace SignalRServer
                     }))
                     {
                         Console.WriteLine("服务开启成功,运行在{0}", SignalRURI);
+                        log.Info($"服务开启成功,运行在{SignalRURI}");
                         Console.ReadLine();
                     }
                 }
                 catch (TargetInvocationException)
                 {
                     Console.WriteLine("服务开启失败. 已经有一个服务运行在{0}", SignalRURI);
+                    log.Error($"服务开启失败. 已经有一个服务运行在{SignalRURI}");
                     Console.ReadLine();
                 }
             }
             catch (Exception ex)
             {
                 Console.WriteLine("服务开启异常：{0}", ex.ToString());
+                log.Error($"服务开启异常：{ex}");
                 Console.ReadLine();
             }
 
