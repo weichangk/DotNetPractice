@@ -30,6 +30,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10ThreadMonitor", "ThreadBa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11ThreadException", "ThreadBased\11ThreadException\11ThreadException.csproj", "{8F571A1A-4A8F-4092-B211-67A3FE80F3FA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ThreadSync", "ThreadSync", "{0D1F539F-DAA2-4FE9-ABDA-E607CFBCEF8A}"
+	ProjectSection(SolutionItems) = preProject
+		ThreadSync\ThreadSync.txt = ThreadSync\ThreadSync.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01UseInterlocked", "ThreadSync\01UseInterlocked\01UseInterlocked.csproj", "{F122C2CB-911B-4724-A175-4E5616FBED84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02UseMutex", "ThreadSync\02UseMutex\02UseMutex.csproj", "{B7CFCA35-B2F7-48E2-910E-731F6B86E821}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -80,6 +89,14 @@ Global
 		{8F571A1A-4A8F-4092-B211-67A3FE80F3FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F571A1A-4A8F-4092-B211-67A3FE80F3FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F571A1A-4A8F-4092-B211-67A3FE80F3FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F122C2CB-911B-4724-A175-4E5616FBED84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F122C2CB-911B-4724-A175-4E5616FBED84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F122C2CB-911B-4724-A175-4E5616FBED84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F122C2CB-911B-4724-A175-4E5616FBED84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7CFCA35-B2F7-48E2-910E-731F6B86E821}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7CFCA35-B2F7-48E2-910E-731F6B86E821}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7CFCA35-B2F7-48E2-910E-731F6B86E821}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7CFCA35-B2F7-48E2-910E-731F6B86E821}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -96,6 +113,8 @@ Global
 		{6D7A2123-F06B-4B93-A30C-14FC42FE484F} = {2CB911B5-FE96-492F-AFE1-9D701E26CEBC}
 		{0CD7BEAA-7B5B-4FED-8C7F-A5F5F4BF6235} = {2CB911B5-FE96-492F-AFE1-9D701E26CEBC}
 		{8F571A1A-4A8F-4092-B211-67A3FE80F3FA} = {2CB911B5-FE96-492F-AFE1-9D701E26CEBC}
+		{F122C2CB-911B-4724-A175-4E5616FBED84} = {0D1F539F-DAA2-4FE9-ABDA-E607CFBCEF8A}
+		{B7CFCA35-B2F7-48E2-910E-731F6B86E821} = {0D1F539F-DAA2-4FE9-ABDA-E607CFBCEF8A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2536401C-F467-46D1-AFEE-9541C93745B1}
