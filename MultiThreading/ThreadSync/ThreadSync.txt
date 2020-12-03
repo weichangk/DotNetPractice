@@ -9,12 +9,54 @@
 09 使用SpinWait类
 
 
+01 执行基本的原子操作
 多个线程同时使用共享对象会造成很多问题。同步这些线程使得对共享对象的操作能够以正确的顺序执行是非常重要的。
+Interlocked类，为多线程共享变量提供原子操作，无需用LOCK防止死锁
 
 
+02 使用Mutex类
+Mutex互斥量
+当主程序启动时,定义了一个指定名称的互斥量,设置initialOwner标志为false。这意
+味着如果互斥量已经被创建,则允许程序获取该互斥量。如果没有获取到互斥量,程序则简单地显示Running,等待直到按下了任何键,然后释放该互斥量并退出。
+如果再运行同样一个程序,则会在10秒钟内尝试获取互斥量。如果此时在第一个程序中,按下了任何键,第二个程序则会开始执行。然而,如果保持等待10秒钟,第二个程序将无法获取到该互斥量。
+请注意具名的互斥量是全局的操作系统对象!请务必正确关闭互斥量。最好是使用using代码块来包裹互斥量对象。
+该方式可用于在不同的程序中同步线程,可被推广到大量的使用场景中。也可以用于检测线程运行超时？
 
 
+03 使用SemaphoreSlim类
+Semaphoreslim类作为Semaphore类的轻量级版本的。该类限制了同时访问同一个资源的线程数量。
 
+
+04 使用AutoResetEvent类
+AutoResetEvent类来从一个线程向另一个线程发送通知。AutoResetEvent类可以通知等待的线程有某事件发生。
+当主程序启动时,定义了两个AutoResetEvent实例。其中一个是从子线程向主线程发信号,另一个实例是从主线程向子线程发信号。
+我们向AutoResetEvent构造方法传入false,定义了这两个实例的初始状态为unsignaled,这意味着任何线程调用这两个对象中的任何一个的WaitOne方法将会被阻塞,直到我们调用了Set方法。
+如果初始事件状态为true,那么AutoResetEvent实例的状态为signaled,如果线程调用WaitOne方法则会被立即处理。
+然后事件状态自动变为unsignaled,所以需要再对该实例调用一次Set方法,以便让其他的线程对该实例调用WaitOne方法从而继续执行。
+AutoResetEvent类采用的是内核时间模式,所以等待时间不能太长。使用ManualResetEventslim类更好,因为它使用的是混合模式。
+
+
+05 使用ManualResetEventSlim类
+使用ManualResetEventsSlim类来在线程间以更灵活的方式传递信号。
+ManualResetEvnetSlim的整个工作方式有点像人群通过大门。AutoResetEvent事件像一个旋转门,一次只允许一人通过。
+ManualResetEventSlim是ManualResetEvent的混合版本,一直保持大门敞开直到手动调用Reset方法。当调用_mainEvent.Set时,
+相当于打开了大门从而允许准备好的线程接收信号并继续工作。当调用mainEvent.Reset相当于关闭了大门。
+
+
+06 使用CountDownEvent类
+使用CountdownEvent信号类来等待直到一定数量的操作完成。
+当主程序启动时,创建了一个CountdownEvent实例,在其构造函数中指定了当两个操作完成时会发出信号。
+然后我们启动了两个线程,当它们执行完成后会发出信号。一旦第二个线程完成,主线程会从等待CountdownEvent的状态中返回并继续执行。
+针对需要等待多个异步操作完成的情形,使用该方式是非常便利的。
+然而这有一个重大的缺点。如果调用_countdown.Signal()没达到指定的次数,那么_countdown. Wait)将一直等待。
+请确保使用CountdownEvent时,所有线程完成后都要调用Signal方法。
+
+
+07 使用Barrier类
+Barrier类用于组织多个线程及时，在某个时刻碰面。其提供了一个回调函数,每次线程调用了SignalAndWait方法后该回调函数会被执行。
+创建了Barrier类,指定了我们想要同步两个线程。在两个线程中的任何最后一个调用了_barre.signalAndWait方法后,会执行一个回调函数来打印出阶段。
+每个线程将向Barrer发送两次信号,所以会有两个阶段。每个阶段的最后一个线程调用SignalAndWait方法时, Barrier将执行回调函数。
+这在多线程迭代运算中非常有用,可以在每个迭代结束前执行一些计算。当最后一个线程调用SignalAndWait方法时可以在迭代结束时进行交互。
 
 
 
