@@ -95,6 +95,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08TaskWhenAll", "TaskParall
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09TaskScheduler", "TaskParallelLibrary\09TaskScheduler\09TaskScheduler.csproj", "{922F74AB-B505-497E-AF55-19C38BE259B6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AsyncAwait", "AsyncAwait", "{E36F7CD0-0655-40D2-BED5-774FEBAC295E}"
+	ProjectSection(SolutionItems) = preProject
+		AsyncAwait\AsyncAwait.txt = AsyncAwait\AsyncAwait.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01AwaitGetAsyncResult", "AsyncAwait\01AwaitGetAsyncResult\01AwaitGetAsyncResult.csproj", "{2B40CDC8-5AC4-4621-866B-E09F0BDD8C5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02AsyncAwaitLambda", "AsyncAwait\02AsyncAwaitLambda\02AsyncAwaitLambda.csproj", "{0531B73E-1ED0-4CF5-9166-AEC08C8638A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03MultiTaskAwait", "AsyncAwait\03MultiTaskAwait\03MultiTaskAwait.csproj", "{30D5B9F7-7E70-4936-B8EC-AEDF35EF2563}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -245,6 +256,18 @@ Global
 		{922F74AB-B505-497E-AF55-19C38BE259B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{922F74AB-B505-497E-AF55-19C38BE259B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{922F74AB-B505-497E-AF55-19C38BE259B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B40CDC8-5AC4-4621-866B-E09F0BDD8C5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B40CDC8-5AC4-4621-866B-E09F0BDD8C5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B40CDC8-5AC4-4621-866B-E09F0BDD8C5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B40CDC8-5AC4-4621-866B-E09F0BDD8C5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0531B73E-1ED0-4CF5-9166-AEC08C8638A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0531B73E-1ED0-4CF5-9166-AEC08C8638A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0531B73E-1ED0-4CF5-9166-AEC08C8638A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0531B73E-1ED0-4CF5-9166-AEC08C8638A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30D5B9F7-7E70-4936-B8EC-AEDF35EF2563}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30D5B9F7-7E70-4936-B8EC-AEDF35EF2563}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30D5B9F7-7E70-4936-B8EC-AEDF35EF2563}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30D5B9F7-7E70-4936-B8EC-AEDF35EF2563}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -286,6 +309,9 @@ Global
 		{146F4054-78DB-479A-9349-5AD9E52E91D9} = {37E088D9-3E3A-4AC0-9695-1801EC9AD853}
 		{06731002-B6D5-4363-B1D1-E57887F6D9AE} = {37E088D9-3E3A-4AC0-9695-1801EC9AD853}
 		{922F74AB-B505-497E-AF55-19C38BE259B6} = {37E088D9-3E3A-4AC0-9695-1801EC9AD853}
+		{2B40CDC8-5AC4-4621-866B-E09F0BDD8C5C} = {E36F7CD0-0655-40D2-BED5-774FEBAC295E}
+		{0531B73E-1ED0-4CF5-9166-AEC08C8638A5} = {E36F7CD0-0655-40D2-BED5-774FEBAC295E}
+		{30D5B9F7-7E70-4936-B8EC-AEDF35EF2563} = {E36F7CD0-0655-40D2-BED5-774FEBAC295E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2536401C-F467-46D1-AFEE-9541C93745B1}
