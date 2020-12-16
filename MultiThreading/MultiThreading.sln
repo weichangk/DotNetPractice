@@ -106,6 +106,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02AsyncAwaitLambda", "Async
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03MultiTaskAwait", "AsyncAwait\03MultiTaskAwait\03MultiTaskAwait.csproj", "{30D5B9F7-7E70-4936-B8EC-AEDF35EF2563}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04WhenAllAwait", "AsyncAwait\04WhenAllAwait\04WhenAllAwait.csproj", "{507D2828-BDD9-4DF0-BA47-BBE7C029D085}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -268,6 +270,10 @@ Global
 		{30D5B9F7-7E70-4936-B8EC-AEDF35EF2563}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30D5B9F7-7E70-4936-B8EC-AEDF35EF2563}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30D5B9F7-7E70-4936-B8EC-AEDF35EF2563}.Release|Any CPU.Build.0 = Release|Any CPU
+		{507D2828-BDD9-4DF0-BA47-BBE7C029D085}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{507D2828-BDD9-4DF0-BA47-BBE7C029D085}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{507D2828-BDD9-4DF0-BA47-BBE7C029D085}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{507D2828-BDD9-4DF0-BA47-BBE7C029D085}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -312,6 +318,7 @@ Global
 		{2B40CDC8-5AC4-4621-866B-E09F0BDD8C5C} = {E36F7CD0-0655-40D2-BED5-774FEBAC295E}
 		{0531B73E-1ED0-4CF5-9166-AEC08C8638A5} = {E36F7CD0-0655-40D2-BED5-774FEBAC295E}
 		{30D5B9F7-7E70-4936-B8EC-AEDF35EF2563} = {E36F7CD0-0655-40D2-BED5-774FEBAC295E}
+		{507D2828-BDD9-4DF0-BA47-BBE7C029D085} = {E36F7CD0-0655-40D2-BED5-774FEBAC295E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2536401C-F467-46D1-AFEE-9541C93745B1}
