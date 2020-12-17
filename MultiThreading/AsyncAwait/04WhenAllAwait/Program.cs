@@ -12,8 +12,8 @@ namespace _04WhenAllAwait
 		static void Main(string[] args)
 		{
 			Task t = AsynchronousProcessing();
-            for (int i = 1; i <= 8; i++)
-            {
+			for (int i = 1; i <= 8; i++)
+			{
 				Console.WriteLine(i);
 				Thread.Sleep(1000);
 			}

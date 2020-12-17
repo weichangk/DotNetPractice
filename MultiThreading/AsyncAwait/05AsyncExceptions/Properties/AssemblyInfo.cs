@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("04WhenAllAwait")]
+[assembly: AssemblyTitle("05AsyncExceptions")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("04WhenAllAwait")]
+[assembly: AssemblyProduct("05AsyncExceptions")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("93612bb8-a384-4fe3-bbdc-a115cfd70d82")]
+[assembly: Guid("8dee15a6-b411-4db3-b3a8-4b783b350583")]
 
 // 程序集的版本信息由下列四个值组成: 
 //

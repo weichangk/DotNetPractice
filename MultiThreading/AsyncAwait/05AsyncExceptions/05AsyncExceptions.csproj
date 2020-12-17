@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{93612BB8-A384-4FE3-BBDC-A115CFD70D82}</ProjectGuid>
+    <ProjectGuid>{8DEE15A6-B411-4DB3-B3A8-4B783B350583}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_04WhenAllAwait</RootNamespace>
-    <AssemblyName>04WhenAllAwait</AssemblyName>
+    <RootNamespace>_05AsyncExceptions</RootNamespace>
+    <AssemblyName>05AsyncExceptions</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
