@@ -1,0 +1,24 @@
+使用并发集合
+
+01 使用ConcurrentDictionary
+02 使用ConcurrentQueue实现异步处理
+03 改变ConcurrentStack异步处理顺序
+04 使用ConcurrentBag
+05 创建一个可扩展的爬虫
+06 使用BlockingCollection进行异步处理
+
+先从ConcurrentQueue开始。该集合使用了原子的比较和交换(Compare and Swap,简称CAS)操作,以及SpinWait来保证线程安全。
+它实现了一个先进先出( First In First Out,简称FIFO)的集合,这意味着元素出队列的顺序与加入队列的顺序是一致的。
+可以调用Enqueue方法向队列中加入元素。TryDequeue方法试图取出队列中的第一个元素,而Trypeek方法则试图得到第一个元素但并不从队列中删除该元素。
+
+ConcurrentStack的实现也没有使用任何锁,只采用了CAS操作。它是一个后进先出( Last In First Out,简称LIFO)的集合,这意味着最近添加的元素会先返回。
+可以使用Push和PushRange方法添加元素,使用TryPop和TryPopRange方法获取元素,以及使用TryPeek方法检查元素。
+
+ConcurrentBag是一个支持重复元素的无序集合。它针对这样以下情况进行了优化,即多个线程以这样的方式工作:
+每个线程产生和消费自己的任务,极少与其他线程的任务交互(如果要交互则使用锁),添加元素使用Add方法,检查元素使用TryPeek方法,获取元素使用TryTake方法。
+
+ConcurrentDictionary是一个线程安全的字典集合的实现。对于读操作无需使用锁。但是对于写操作则需要锁。该并发字典使用多个锁,在字典桶之上实现了一个细粒度的锁模型。
+使用参数concurrencyLevel可以在构造函数中定义锁的数量,这意味着预估的线程数量将并发地更新该字典。
+
+BlockingCollection是对IProducerConsumerCollection泛型接口的实现的一个高级封装。它有很多先进的功能来实现管道场景,即当你有一些步骤需要使用之前步骤运行的结果时。
+BlockingCollectione类支持如下功能:分块、调整内部集合容量、取消集合操作、从多个块集合中获取元素。
