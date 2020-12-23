@@ -50,8 +50,17 @@ namespace _07TaskException
 			var t1 = new Task<int>(() => TaskMethod("Task 3", 3));
 			var t2 = new Task<int>(() => TaskMethod("Task 4", 2));
 			var complexTask = Task.WhenAll(t1, t2);
-			var exceptionHandler = complexTask.ContinueWith(t =>
-					Console.WriteLine("Exception caught: {0}", t.Exception),
+			var exceptionHandler = complexTask.ContinueWith(t => {
+						var ae = t.Exception.Flatten();
+						var exceptions = ae.InnerExceptions;
+						Console.WriteLine("Exceptions caught: {0}", exceptions.Count);
+						foreach (var e in exceptions)
+						{
+							Console.WriteLine("Exception details: {0}", e);
+							Console.WriteLine();
+						}
+					},
+					//Console.WriteLine("Exception caught: {0}", t.Exception),
 					TaskContinuationOptions.OnlyOnFaulted
 				);
 			t1.Start();
