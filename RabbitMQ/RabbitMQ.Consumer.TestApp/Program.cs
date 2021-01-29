@@ -11,7 +11,7 @@ namespace RabbitMQ.Consumer.TestApp
     class Program
     {
         private static string ConsumerName = "";
-        private static string RabbitPushServer = "localhost";
+        private static string RabbitPushServer = "127.0.0.1";
         private static string PushServerUserName = "guest";
         private static string PushServerPassword = "guest";
 
